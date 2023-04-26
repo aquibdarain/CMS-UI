@@ -1,0 +1,76 @@
+<div class="container">
+  <div class="card shadow">
+    <div class="card-header ps-3">User Contact Details
+      <button class="btn btn-sm btn-success"routerLink="/services">Add Contact</button>
+    </div>
+    <!-- need to be if any will  -->
+    <div class="card-body">
+      <div class="">
+        <div class="">
+          <div class="row">
+            <div class="col-12" *ngFor="let user of userArr; let i = index">
+              <div class="card">
+                <div class="card-body">
+              <h5 class="text-center">
+                <img src="../../assets/iconUser.png" alt="logo" />
+                <i class="fa fa-user" aria-hidden="true"></i> ID {{ i + 1 }}
+              </h5>
+              <td>
+                <i class="fa fa-id-card" aria-hidden="true"> &nbsp;</i>Name:
+                {{ user.name }}
+              </td>
+              <br />
+              <td>
+                <i class="fa fa-phone-square" aria-hidden="true">&nbsp;</i>Contact Number: {{ user.contactNumber }}
+              </td>
+              <br />
+              <td>
+                <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp; Email: {{ user.email }}
+              </td>
+              <br />
+              <td>
+                <i class="fa fa-birthday-cake" aria-hidden="true"></i> &nbsp; Date of Birth: {{ user.dob }}
+              </td>
+              <br />
+              <td>
+                <i class="fa fa-link" aria-hidden="true"></i> &nbsp; Github Id: <a href="">{{ user.github }}</a>
+              </td>
+              <br />
+              <td>
+                <i class="fa fa-link" aria-hidden="true"></i> &nbsp; Linkedin Id: <a href="">{{ user.linkedin }}</a>
+              </td>
+              <br />
+              <td>
+                <i class="fa fa-link" aria-hidden="true"></i>&nbsp; Instagram Id: <a href="">{{ user.instagram }}</a>
+              </td>
+              <br />
+              <td>
+                <i class="fa fa-link" aria-hidden="true"></i>&nbsp; Twitter Id: <a href="">{{ user.twitter }}</a>
+              </td>
+              <br />
+              <td>
+                <i class="fa fa-id-badge" aria-hidden="true">;</i>&nbsp; Adhar:  {{ user.aadhar }}
+              </td>
+              <br>
+              <td><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp; Occupation: {{ user.occupation }}</td>
+              <br />
+              <td>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;
+                Address: {{ user.address }}
+              </td>
+              <br />
+              <div>
+                <button class="btn btn-sm btn-warning" (click)="sendUserId(user)">Edit</button>&nbsp;
+                <button class="btn btn-sm btn-danger" (click)="deleteStudent(user.id)">Delete</button>
+              </div>
+              <div>
+              </div>
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
