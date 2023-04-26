@@ -26,19 +26,19 @@ export const navbarData =  [
     icon: 'fal fa-chart-bar',
     label: 'Add Contact'
   },
-  {
-    routeLink: 'exams',
-    icon: 'fal fa-file',
-    label: 'Edit Contact'
-  },
+  // {
+  //   routeLink: 'exams',
+  //   icon: 'fal fa-file',
+  //   label: 'Edit Contact'
+  // },
   // {
   //   routeLink: 'quiz',
   //   icon: 'fal fa-tags',
   //   label: 'Quiz'
   // },
-  {
-    routeLink: 'setting',
-    icon: 'fal fa-cog',
-    label: 'Delete Contact'
-  },
+  // {
+  //   routeLink: 'setting',
+  //   icon: 'fal fa-cog',
+  //   label: 'Delete Contact'
+  // },
 ];
